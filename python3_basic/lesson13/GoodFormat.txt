@@ -1,0 +1,97 @@
+#!/usr/bin/env python3
+#coding=utf8
+# PEP8风格示例
+
+# good 
+foo = long_function_name(var_one, var_two,
+                        var_three, var_four)
+
+# good
+def long_function_name(
+        var_one, var_two, var_three,
+        var_four):
+    print(var_one)
+
+#good
+if(this_is_one_thing)
+        and that_is_another_thing):
+    do_something()
+
+#good
+my_list = [
+    1,2,3,
+    4,5,6,
+    ]
+
+#good
+result = some_function_that_takes_argument(
+    'a','b','c',
+    'd','e','f'
+    )
+
+#not recommend to use tab, you should use space
+
+#no more than 72 characters each line
+
+#good
+with open('/path/to/some/file/you/want/to/read') as file1,\ 
+    open('/path/to/some/file/you/want/to/write','w') as file2:
+    file2.write(file1.read())
+
+#good
+class Retangle(Blob):
+
+    def __init__(self, width, height,,
+                color = 'black', emphasis = None, highlight = 0):
+        if (width==0 and height==0 and
+                color == 'red' and emphasis = 'strong' or
+                highlight > 100):
+            raise ValueError("sorry, you lose")
+
+#good
+import sys
+import os
+
+#bad
+import sys, os
+
+#good
+from myclass import MyClass
+from foo.bar.youclass import YourClass
+
+#bad
+import MyClass
+import YourClass
+
+#good
+ham[lower+offset : upper+offset]
+
+#bad
+ham[lower + offset:upper + offset]
+
+#good
+r = x*x + y*y
+
+#bad
+r = x * x + y * y
+
+#good
+def complex(real, img=0.0):
+    return magic(r=real, i=img)
+
+
+#bad
+def complex(real, img = 0.0 ):
+    return magic(r = real, i = img)
+
+#good
+"""Return a foobang
+
+xxxx
+"""
+
+#good
+__version__ = "$Reversion$"
+# $Source$
+
+

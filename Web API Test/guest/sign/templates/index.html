@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>发布会管理</title>
+</head>
+<h1>发布会管理</h1>
+<form method="post" action="/login_action/">
+    {% csrf_token %}
+    <input name="username" type="text" placeholder="username"><br>
+    <input name="password" type="password" placeholder="password"><br>
+    {{ error }}<br>
+    <button id="btn" type="submit">登陆</button>
+</form>
+</html>
